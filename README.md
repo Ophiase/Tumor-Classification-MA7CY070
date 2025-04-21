@@ -9,8 +9,10 @@ It aims at verifying the performances of each on a specific dataset for a course
 
 ## Summary
 
-- Installation
+- Installation and Execution
 - Requirements
+
+## Installation and Execution
 
 ## Key Architectural Differences
 
@@ -27,5 +29,3 @@ Below are key differences between the architectures:
 3. **Data Requirements**  
    - **CNNs**: Perform well with limited data due to their hierarchical structure.  
    - **ViTs**: Require large datasets for pretraining to avoid overfitting.  
-
----

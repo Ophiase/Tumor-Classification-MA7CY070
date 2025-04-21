@@ -2,7 +2,7 @@ import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader
 from typing import Tuple, List
-from common import DEVICE
+from common import DEVICE, EPOCHS
 
 
 def train_one_epoch(model: nn.Module,
@@ -45,7 +45,7 @@ def validate(model: nn.Module,
 def train_model(model: nn.Module,
                 train_loader: DataLoader,
                 val_loader: DataLoader,
-                epochs: int,
+                epochs: int = EPOCHS,
                 optimizer: optim.Optimizer = None
                 ) -> dict[str, List[float]]:
     criterion = nn.CrossEntropyLoss()

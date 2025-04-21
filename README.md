@@ -1,2 +1,3 @@
 # Tumor-Classification-MA7CY070
-Learn tumor classification
+
+Compare Vision Transformer and Convolutional Neural Network for tumor classification.

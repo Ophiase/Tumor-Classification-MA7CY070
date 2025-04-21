@@ -1,8 +1,7 @@
-from typing import Tuple, Callable
+from typing import Tuple
 import torch
 import torch.nn as nn
 import torch.optim as optim
-
 from common import DEVICE, IMG_SIZE, NUM_CLASSES
 
 

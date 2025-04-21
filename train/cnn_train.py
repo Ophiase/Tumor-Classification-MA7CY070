@@ -45,10 +45,12 @@ def validate(model: nn.Module,
 def train_model(model: nn.Module,
                 train_loader: DataLoader,
                 val_loader: DataLoader,
-                epochs: int
+                epochs: int,
+                optimizer: optim.Optimizer = None
                 ) -> dict[str, List[float]]:
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters())
+    if optimizer is None:
+        optimizer = optim.Adam(model.parameters())
     history = {"train_loss": [], "train_acc": [],
                "val_loss": [], "val_acc": []}
     for _ in range(epochs):

@@ -54,7 +54,7 @@ Models are compared in ``compare_trained_models.ipynb`` on their:
 
 ## Key Architectural Differences
 
-Below are key differences between the architectures:
+Below are key differences expected between the architectures based on the litterature:
 
 1. **Inductive Bias**  
    - **CNNs**: Strong spatial inductive bias (localized filters, hierarchical feature detection).  

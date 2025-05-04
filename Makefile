@@ -17,7 +17,7 @@ install-cpu:
 install-gpu:
 	@echo "Installing CUDA-enabled stack"
 	pip install -r requirements.txt
-	pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu$(CUDA_VER)
+	pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128
 
 # Auto-detect: prefer GPU if nvidia-smi exists
 install: 

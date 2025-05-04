@@ -16,6 +16,21 @@ It aims at verifying the performances of each on a specific dataset for a course
 
 ## Installation and Execution
 
+### Installation
+
+```bash
+# Python 3.12.7 recommended
+# Specify in the Makefile your python command
+make install-cpu
+make install-gpu # highly recommended 
+```
+
+## Execution
+
+- Download the datasets
+   - Setup your kaggle
+   - 
+
 ## Key Architectural Differences
 
 Below are key differences between the architectures:

@@ -35,7 +35,7 @@ make download
 python3 -m download 
 ```
 
-You can visualize the datasets in : ``visualize.py``
+You can visualize the training datasets in : ``visualize.py``
 
 ## Training
 
@@ -51,6 +51,9 @@ Models are compared in ``compare_trained_models.ipynb`` on their:
 - Loss (train/test)
 - Accurracy (train/test)
 - Dataset from other sources
+
+The ``open_weights`` folder is too heavy for github.
+Thus it is removed from the github version.
 
 ## Key Architectural Differences
 
@@ -84,9 +87,4 @@ We will train a model to classify a tumor, and safe check its capacity of genera
 
 ## Experiments
 
-- Best at learning the dataset
-   - ...
-- Best at generalization (outside of the original dataset)
-   - ...
-- Fastest to train
-   - ...
+Check report

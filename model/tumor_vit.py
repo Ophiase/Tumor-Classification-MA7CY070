@@ -57,7 +57,7 @@ class VisionTransformer(nn.Module):
         depth: int,
         num_heads: int,
         mlp_dim: int,
-        num_classes: int,
+        num_classes: int = 4,
         dropout: float = 0.1
     ) -> None:
         super().__init__()
@@ -109,7 +109,7 @@ class VisionTransformer(nn.Module):
 def build_vit_model(
     num_classes: int,
     img_size: Tuple[int, int],
-    device: torch.device,
+    device: torch.device = DEVICE,
     patch_size: int = 16,
     emb_dim: int = 768,
     depth: int = 12,
@@ -134,7 +134,7 @@ def build_optimizer(
     lr: float = 3e-4,
     weight_decay: float = 0.05
 ) -> optim.Optimizer:
-    # AdamW is commonly used for ViTs
+    # Adam is commonly used for ViTs
     return optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay)
 
 if __name__ == "__main__":

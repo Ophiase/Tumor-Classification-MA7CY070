@@ -50,8 +50,8 @@ def init_weights(module: nn.Module) -> None:
 
 def build_model(
     num_classes: int,
-    img_size: Tuple[int, int],
-    device: torch.device
+    img_size: Tuple[int, int] = IMG_SIZE,
+    device: torch.device = DEVICE
 ) -> nn.Module:
     model = ImprovedTumorCNN(num_classes, img_size)
     model.apply(init_weights)

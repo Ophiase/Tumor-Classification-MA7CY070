@@ -2,7 +2,7 @@
 from typing import Tuple
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader, random_split
-from common import TRAIN_DIR, TEST_DIR, IMG_SIZE, BATCH_SIZE, VALID_SPLIT
+from common import TRAIN_DIR_1, TEST_DIR_1, IMG_SIZE, BATCH_SIZE, VALID_SPLIT
 
 
 def limit_dataset(dataset: datasets.ImageFolder, max_images: int) -> datasets.ImageFolder:
@@ -18,8 +18,8 @@ def limit_dataset(dataset: datasets.ImageFolder, max_images: int) -> datasets.Im
     return dataset
 
 
-def create_data_loaders(train_dir: str = TRAIN_DIR,
-                        test_dir: str = TEST_DIR,
+def create_data_loaders(train_dir: str = TRAIN_DIR_1,
+                        test_dir: str = TEST_DIR_1,
                         img_size: Tuple[int, int] = IMG_SIZE,
                         batch_size: int = BATCH_SIZE,
                         valid_split: float = VALID_SPLIT,

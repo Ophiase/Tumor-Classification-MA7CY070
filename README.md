@@ -1,4 +1,4 @@
-# Tumor MRI Classification Comparison: ViT vs. CNN
+# [Tumor MRI Classification Comparison: ViT vs. CNN](https://github.com/Ophiase/Tumor-Classification-MA7CY070)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.9.13+](https://img.shields.io/badge/Python-3.9.13%2B-yellow.svg)](https://www.python.org/)
